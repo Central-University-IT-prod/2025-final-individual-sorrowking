@@ -1,0 +1,25 @@
+.achievement {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  background: white;
+  border: 2px solid #e9ecef;
+  
+  &:hover {
+    transform: translateY(-2px);
+    border-color: #228be6;
+    box-shadow: 0 4px 12px rgba(34, 139, 230, 0.1);
+  }
+
+  &--completed {
+    border-color: #40c057;
+    background: rgba(64, 192, 87, 0.05);
+    
+    &:hover {
+      border-color: #40c057;
+      box-shadow: 0 4px 12px rgba(64, 192, 87, 0.1);
+    }
+  }
+
+}

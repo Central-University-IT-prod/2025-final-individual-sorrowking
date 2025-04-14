@@ -1,0 +1,22 @@
+
+.exerciseCard {
+  position: relative;
+  border-radius: 16px;
+
+  
+  &__metricCard {
+    transition: transform 0.2s ease;
+    border-width: 2px;
+    background: white;
+    min-width: 150px;
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  &__skipButton {
+    font-size: 10px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(255, 107, 0, 0.2);
+  }
+}

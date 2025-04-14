@@ -1,0 +1,18 @@
+.exercise {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-left: 4px solid #3b82f6;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateX(4px);
+  }
+
+  &::before {
+    content: '•';
+    color: #3b82f6;
+    font-size: 1.5em;
+    line-height: 1;
+  }
+}

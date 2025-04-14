@@ -1,0 +1,30 @@
+
+.bottomPanelContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.circleTabsList {
+  gap: 8px;
+  padding: 8px 0;
+  justify-content: center;
+}
+
+
+.circleTab {
+  margin-left: 16px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mantine-color-white) !important;
+
+  &:hover {
+    background-color: transparent; 
+  }
+}
+
+

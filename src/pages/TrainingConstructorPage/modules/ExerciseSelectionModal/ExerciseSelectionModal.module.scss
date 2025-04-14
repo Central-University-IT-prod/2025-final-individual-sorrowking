@@ -1,0 +1,27 @@
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tabsList {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+.exerciseItem {
+  break-inside: avoid;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+  height: 100%;
+
+  &:hover {
+    transform: scale(1.01)
+  }
+}
+.selectionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}

@@ -1,0 +1,23 @@
+.exerciseDescription {
+
+  &__control {
+    background-color: #F0F7FF;
+    border-color: #B6D4FE;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #E1EFFF
+    }
+  }
+
+  &__label {
+    color: #2C4E8A
+  }
+
+  &__chevron {
+    color: #2C4E8A;
+  }
+
+  &__item { 
+    border-color: #B6D4FE;
+  }
+}

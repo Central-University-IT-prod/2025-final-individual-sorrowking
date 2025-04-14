@@ -1,0 +1,9 @@
+.icon {
+  color: #94a3b8;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &_rotated {
+    transform: rotate(180deg);
+    color: #3b82f6 !important;
+  }
+}

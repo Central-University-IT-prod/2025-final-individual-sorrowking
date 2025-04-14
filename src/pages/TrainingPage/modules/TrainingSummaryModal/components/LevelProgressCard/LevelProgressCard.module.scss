@@ -1,0 +1,38 @@
+.levelCard {
+  border: none;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #f8f9fa, #fff);
+  border-radius: var(--mantine-radius-md);
+  transition: all 0.3s ease;
+}
+
+.levelCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.4s ease;
+
+  &--old {
+    background: #228be6;
+  }
+
+  &--new {
+    background: #03911f;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .levelCircle {
+    width: 60px;
+    height: 60px;
+
+  }
+}
+

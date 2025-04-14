@@ -1,0 +1,43 @@
+.tutorial {
+  margin-top: 1rem; 
+  padding: 1rem;
+  background-color: rgba(255, 165, 119, 0.05);
+  border: 1px solid rgba(255, 165, 119, 0.3);
+  border-radius: 0.5rem; 
+
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(255, 165, 119, 0.1);
+  }
+
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    color: #868e96;
+  }
+  
+  &__group {
+    gap: 0.5rem; 
+  }
+
+  &__imageContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__image {
+    max-height: 400px;
+    max-width: 500px  ;
+    object-fit: contain;
+    @media (max-width: 800px) {
+      max-height: 300px;
+      max-width: 250px;
+    }
+  }
+}
+

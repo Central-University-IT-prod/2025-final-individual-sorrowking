@@ -1,0 +1,46 @@
+.tabsContainer {
+  gap: 4px;
+}
+
+.tab {
+  letter-spacing: 0.5px;
+  background-color: transparent;
+
+  &Section {
+    margin-right: 6px;
+    color: inherit;
+  }
+}
+
+.modeButton {
+  &--delete {
+    &.active {
+      border: 2px solid var(--mantine-color-red-6);
+      color: var(--mantine-color-red-9);
+    }
+
+    
+
+  }
+
+  &--arrange {
+    &.active {
+      border: 2px solid var(--mantine-color-violet-6);
+      color: var(--mantine-color-violet-9);
+    }
+
+  }
+
+  &--edit {
+    &.active {
+      border: 2px solid var(--mantine-color-blue-6);
+      color: var(--mantine-color-blue-9);
+    }
+
+  }
+
+  &:not(.active) {
+    border: none;
+    color: var(--mantine-color-gray-7);
+  }
+}

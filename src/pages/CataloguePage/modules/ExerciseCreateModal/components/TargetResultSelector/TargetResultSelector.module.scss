@@ -1,0 +1,31 @@
+.targetResultSelector {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  &__button {
+    padding: 8px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  
+    @media (max-width: 700px) {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+    &:hover {
+      border-color: #ff3535;
+    }
+  
+    &--active {
+      background-color: #ff3535;
+      color: white;
+      border-color: #ff3535;
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+.userData {
+  margin-top: 16px !important ;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  &__card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+  }
+}

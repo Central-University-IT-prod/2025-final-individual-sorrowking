@@ -1,0 +1,23 @@
+.editContainer {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  &__inputField {
+    transition: all 0.2s ease;
+  }
+
+  &__saveButton {
+    margin-top: 1.5rem;
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(34, 139, 230, 0.25);
+    }
+  
+  }
+}
+

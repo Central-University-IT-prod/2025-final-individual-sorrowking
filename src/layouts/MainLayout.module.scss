@@ -1,0 +1,20 @@
+.fullContainer {
+  height: 100vh;
+  width: 100%; 
+  width: 100vw;
+  position: relative;
+  box-sizing: border-box; 
+  overflow-x: hidden; 
+  display: flex;
+  background: #f9f9f9;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.mainContainer {
+  flex: 1;
+  overflow-x: auto;
+
+  
+}

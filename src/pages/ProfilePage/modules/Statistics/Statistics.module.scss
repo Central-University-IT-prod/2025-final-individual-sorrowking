@@ -1,0 +1,50 @@
+.statistics {
+  padding: 0.5rem;
+}
+
+.levelCard {
+  border: none;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #f8f9fa, #fff);
+  &__levelCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #228be6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+      
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      padding: 2px;
+      background: linear-gradient(
+        135deg,
+        #ff6b35,
+        #c635ff,
+        #427eff
+      );
+      mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+    }
+  }
+
+  &__iconWrapper {
+    padding: 12px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #228be6;
+  }
+}
+

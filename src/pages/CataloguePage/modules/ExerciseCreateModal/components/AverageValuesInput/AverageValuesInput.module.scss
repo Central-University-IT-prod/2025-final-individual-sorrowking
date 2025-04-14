@@ -1,0 +1,40 @@
+
+.averageValues {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  &__params {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__param {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__inputHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    color: #6366f1;
+  }
+
+  &__label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #444;
+  }
+
+  
+
+
+}
+

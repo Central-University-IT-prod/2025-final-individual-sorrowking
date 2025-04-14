@@ -1,0 +1,35 @@
+
+
+.levelRewardsList {
+  overflow-x: auto;
+  padding-bottom: 8px;
+
+  &__rewardCard {
+    min-width: 180px;
+    border: 1px solid var(--mantine-color-gray-2);
+    border-radius: var(--mantine-radius-md);
+    background: var(--mantine-color-white);
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &__levelBadge {
+    padding: 4px 10px;
+    background: var(--mantine-color-blue-1);
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  
+  &__itemImage {
+    border-radius: var(--mantine-radius-sm);
+    border: 1px solid var(--mantine-color-gray-2);
+    padding: 3px;
+    height: 60px;
+    min-width: 60px;
+    overflow: hidden;
+  }
+  
+}

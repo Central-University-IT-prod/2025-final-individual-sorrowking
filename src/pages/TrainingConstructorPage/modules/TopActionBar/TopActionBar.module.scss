@@ -1,0 +1,40 @@
+.titleInput {
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  color: #333;
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  }
+
+  &::placeholder {
+    color: #999;
+  }
+}
+
+.addButton {
+  &:hover {
+    svg {
+      transition: transform 0.2s ease;
+      transform: rotate(90deg) scale(1.1);
+    }
+  }
+}
+
+.saveButton {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important;
+  &:hover:not(:disabled) {
+    svg {
+      transition: transform 0.2s ease;
+      transform: translateY(-2px) scale(1.1);
+    }
+  }
+
+  &:disabled {
+    background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
+    filter: grayscale(40%);
+  }
+}

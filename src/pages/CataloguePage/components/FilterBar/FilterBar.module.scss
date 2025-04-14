@@ -1,0 +1,45 @@
+.sideFilterBar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filterBar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  @media (max-width: 1200px) {
+    display: none; 
+  }
+
+
+  &__menuButton {
+    display: none; 
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: #ff4500;
+    }
+
+    @media (max-width: 1200px) {
+      display: block; 
+    }
+  }
+
+  &__filterMultiSelect {
+    flex: 1;
+  }
+  
+}
+

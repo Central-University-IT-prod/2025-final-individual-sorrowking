@@ -1,0 +1,62 @@
+.card {
+  width: 350px;
+  position: relative;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  padding-top: 0 !important;
+
+  &__header {
+    position: relative;
+    border-radius: 16px;
+    padding: 2px;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      padding: 2px;
+      background: linear-gradient(
+        135deg,
+        #ff6b35,
+        #c635ff,
+        #427eff
+      );
+      mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+    }
+  }
+
+  &__title {
+    border-radius: 16px;
+    background-color: white;
+    padding: 8px;
+  }
+
+  &__actionButton {
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    
+    &:hover {
+      transform: scale(1.15);
+      filter: brightness(1.1);
+      
+      &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at center, 
+          rgba(255, 255, 255, 0.4) 0%, 
+          rgba(255, 255, 255, 0) 80%
+        );
+        animation: button-float 1.5s infinite;
+      }
+    }
+    
+    @keyframes button-float {
+      0% { transform: scale(1); opacity: 1 }
+      100% { transform: scale(2); opacity: 0 }
+    }
+  }
+}

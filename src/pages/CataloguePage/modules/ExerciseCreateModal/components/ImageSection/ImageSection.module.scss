@@ -1,0 +1,32 @@
+.dropzone {
+  border: 2px dashed #e0e0e0;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+
+
+
+  &:hover {
+    border-color: #ff6b35;
+    background: #fff4f0;
+  }
+
+  p {
+    margin: 0;
+    color: #666;
+    @media (max-width: 800px) {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__preview {
+    max-width: 100%;
+    max-height: 200px; 
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}

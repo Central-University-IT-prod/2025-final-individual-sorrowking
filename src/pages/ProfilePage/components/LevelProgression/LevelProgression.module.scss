@@ -1,0 +1,71 @@
+.levelProgression {
+  margin-top: 2rem;
+
+  
+  &__container {
+    position: relative;
+    overflow-x: auto;
+    padding: 1rem 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    flex-shrink: 0;
+    width: 200px;
+
+  }
+}
+
+
+.levelCard {
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1;
+  height: 100%;
+
+
+  &.unlocked {
+    border-color: #40c057;
+    background: rgba(64, 192, 87, 0.05);
+  }
+
+  
+  &__levelNumber {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #228be6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+
+}
+
+.connectorLine {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  width: 40px;
+  height: 2px;
+  background: #dee2e6;
+
+}
+
+
+.rewardCard {
+  height: 100%;
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
+
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 12px rgba(34, 139, 230, 0.15);
+  }
+
+}
